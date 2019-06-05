@@ -1,0 +1,166 @@
+
+.nav-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.link-stores::before {
+  content: "";
+  background-color: #6a778f;
+  -webkit-mask-image: url(~src/assets/images/shop-icon.png);
+  mask-image: url(~src/assets/images/shop-icon.png);
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+.nav-item a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #454f63;
+  position: relative;
+  background: #262e3e;
+  z-index: 3;
+  display: block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.nav-item .sub-quantity{
+  color: #fff;
+  font-style: normal;
+  font-size: 10px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 700;
+  background: #f73b67;
+  text-indent: 0;
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  display: none;
+}
+
+.nav-item a::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  color: #6a778f;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.nav-item a:hover {
+  border-color: #626d83;
+}
+
+.nav-item a:hover::before {
+  color: #8a99b5;
+}
+
+.nav-profile .image-holder {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: 0;
+  margin: 4px 0 0 4px;
+}
+
+.nav-profile .image-holder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.main-nav .active-bg {
+  content: "";
+  display: none;
+  position: absolute;
+  top: -32px;
+  left: -8px;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 112px;
+  z-index: 1;
+}
+
+.active-item::after {
+  display: block !important;
+}
+.nav-item.purple::after {
+  background-image: url(~src/assets/images/arrow-purple.png);
+}
+
+.nav-item.blue::after {
+  background-image: url(~src/assets/images/arrow.png);
+}
+.active-item.blue a::before {
+  color: #00b9ca;
+}
+
+.nav-item.blue::after {
+  background-image: url(~src/assets/images/arrow.png);
+}
+.active-item.blue a::before {
+  color: #00b9ca;
+}
+
+.nav-item.purple::after {
+  background-image: url(~src/assets/images/arrow-purple.png);
+}
+.active-item.purple a::before {
+  color: #7f64b4;
+}
+
+.nav-item.purple::after {
+  background-image: url(~src/assets/images/arrow-purple.png);
+}
+.active-item.purple a::before {
+  color: #7f64b4;
+}
+
+.nav-item.purple::after {
+  background-image: url(~src/assets/images/arrow-purple.png);
+}
+.active-item.purple a::before {
+  color: #7f64b4;
+}
+
+.nav-item.purple::after {
+  background-image: url(~src/assets/images/arrow-purple.png);
+}
+.active-item.purple a::before {
+  color: #7f64b4;
+}
+
+.nav-item.purple::after {
+  background-image: url(~src/assets/images/arrow-purple.png);
+}
+.active-item.purple a::before {
+  color: #7f64b4;
+}
+.active-item .link-stores::before {
+  background-color: #7e64b7;
+}
+
+
+.nav-item::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: -32px;
+  left: -8px;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 112px;
+  z-index: 1;
+}

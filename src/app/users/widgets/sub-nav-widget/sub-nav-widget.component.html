@@ -1,0 +1,12 @@
+<nav class="sub-nav">
+  <ul>
+    <li *ngFor="let menuItem of menu">
+      <ng-container *ngIf="menuItem.type === 'link'">
+        <a [routerLink]="menuItem.url" routerLinkActive="sub-nav-active">{{menuItem.title}}</a>
+      </ng-container>
+      <ng-container *ngIf="menuItem.type === 'action'">
+        <a (click)="this[menuItem.actionName]()">{{menuItem.title}}</a>
+      </ng-container>
+    </li>
+  </ul>
+</nav>

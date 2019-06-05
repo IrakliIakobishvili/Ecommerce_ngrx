@@ -1,0 +1,119 @@
+.my-plans {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.plan-and-payment__title {
+  padding: 15px 40px 10px;
+  font-size: 18px;
+  font-family: Gilroy-med;
+  color: #625a5a;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.payment-plans {
+  margin: 40px;
+}
+
+.payment-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 490px;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  color: #4b4b4b;
+  padding: 20px 20px;
+  margin: 15px 0;
+  -webkit-transition: border 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.payment-plan:hover {
+  border-color: #a6a6a6;
+}
+
+.payment-plan--active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f85171), to(#ffde93));
+  background: linear-gradient(90deg, #f85171 50%, #ffde93);
+  border-color: #fff !important;
+  color: #fff;
+}
+
+.payment-plan--active .btn-primary {
+  background: #fff;
+  color: #fcb88a;
+}
+
+.payment-plan__category {
+  font-family: Gilroy-semibold;
+  font-size: 21px;
+  margin-bottom: 3px;
+}
+
+.payment-plan__info {
+  max-width: 205px;
+  font-size: 13px;
+}
+
+.payment__price {
+  font-family: Gilroy-med;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.payment__price--details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.payment__price--dec {
+  font-family: Gilroy-med;
+  font-size: 13px;
+}
+
+.payment__price--rate {
+  font-family: Gilroy-light;
+  font-size: 13px;
+  padding-left: 2px;
+}
+
+.payment-learn-more--wrapper {
+  margin: 0 auto 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.payment-learn-more {
+  cursor: pointer;
+  color: #625a5a;
+  -webkit-transition: color 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.payment-learn-more:hover {
+  color: #111;
+}
+
+.payment-learn-more__arrow {
+  padding-left: 3px;
+  line-height: 1;
+}

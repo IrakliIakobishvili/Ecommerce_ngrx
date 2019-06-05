@@ -1,0 +1,68 @@
+:host{
+  height: 217.25px;
+  width: calc(50% - 5px);
+}
+.balance-section, .support-section {
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #e7e7f0;
+}
+.balance-title, .support-title {
+  padding-bottom: 10px;
+  border-bottom: solid 1px #dedee9;
+  font-family: 'OpenSansBold';
+  font-size: 15px !important;
+  color: #48424b !important;
+  height: 32px;
+  width: calc(95% - 5px);
+}
+.balance-title h4, .support-title h4  {
+  font: 700 15px Arial,Verdana,Helvetica,sans-serif;
+}
+.section-title {
+  display: flex;
+  height: 32px;
+  margin: 24px auto 0px;
+  margin-bottom: 25px;
+  padding: 0px 0px 10px;
+  border-bottom: solid 1px #dedee9;
+  font-family: 'OpenSansBold';
+  font-size: 15px !important;
+  color: #48424b;
+}
+.balance-img {
+  width: 25px;
+  height: 22px;
+}
+.newsImg {
+  width: 21px;
+  height: 19px;
+  margin: 0px 10px -5px 0;
+}
+.deposit {
+  margin: 50px auto;
+  height: 49px;
+  display: flex;
+}
+.balance-price {
+  margin: 5px 0 0 auto;
+  font-family: 'OpenSansLight';
+  font-size: 38px;
+  color: #689e0c;
+  float: left;
+}
+.make-deposit-button {
+  cursor: pointer;
+  margin: 10px auto 0 15px;
+  margin-left: 15px;
+  width: 128px;
+  height: 34px;
+  border: 1px solid #58a759;
+  background: #76bd79;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 34px;
+  color: white;
+}

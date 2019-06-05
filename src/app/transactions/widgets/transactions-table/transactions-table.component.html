@@ -1,0 +1,132 @@
+<table class="transactions-table">
+  <tbody>
+  <tr class="transactions-tr">
+    <th class="transactions-th">
+      transaction id
+    </th>
+    <th class="transactions-th transactions-th--create">
+      create date
+    </th>
+    <th class="transactions-th">order id</th>
+    <th class="transactions-th">
+      payment method
+    </th>
+    <th class="transactions-th">action</th>
+    <th class="transactions-th">type</th>
+    <th class="transactions-th">amount</th>
+    <th class="transactions-th">status</th>
+    <th class="transactions-th">
+      approved date
+    </th>
+  </tr>
+  <tr class="transactions-tr">
+    <th class="transactions-th">
+      <input type="text" name="transaction_id" value="" class="transaction_id">
+    </th>
+    <th class="transactions-th">
+      <div class="filter-date-cont">
+        <div class="filter-date filter-from">
+          <span>From:</span>
+          <input type="text" name="created_from" value="" class="created_from">
+        </div>
+        <div class="filter-date filter-to">
+          <span>To:</span>
+          <input type="text" name="created_to" value="" class="created_to">
+        </div>
+      </div>
+    </th>
+    <th class="transactions-th">
+      <input type="text" name="order_id" value="" class="order_id">
+    </th>
+    <th class="transactions-th">
+      <input type="text" name="payment_method" value="" class="payment_method">
+    </th>
+    <th class="transactions-th">
+      <select class="countries-select" id="country_id">
+        <option value="deposit">deposit</option>
+        <option value="AL">charge</option>
+        <option value="charge">Algeria</option>
+        <option value="AS">reship</option>
+        <option value="reship">refund</option>
+        <option value="commision">transfer commision</option>
+      </select>
+    </th>
+    <th class="transactions-th">
+      <select class="countries-select" id="">
+        <option class="hideme"></option>
+        <option value="deposit">credit</option>
+        <option value="AL">debit</option>
+      </select>
+    </th>
+    <th class="transactions-th">
+      <input type="text" name="amount" value="" class="amount">
+    </th>
+    <th class="transactions-th">
+      <select class="countries-select" id="">
+        <option class="hideme"></option>
+        <option value="panding">panding</option>
+        <option value="approved">approved</option>
+        <option value="canceled">canceled</option>
+      </select>
+    </th>
+    <th class="transactions-th">
+      <div class="filter-date-cont">
+        <div class="filter-date filter-from">
+          <span>From:</span>
+          <input type="text" name="created_from" value="" class="created_from">
+        </div>
+        <div class="filter-date filter-to">
+          <span>To:</span>
+          <input type="text" name="created_to" value="" class="created_to">
+        </div>
+      </div>
+    </th>
+  </tr>
+  </tbody>
+  <tbody><tr class="transactions-tr">
+    <td class="transactions-td">
+      5050
+    </td>
+    <td class="transactions-td">
+      Feb 5, 2019 3:24:17 PM
+    </td>
+    <td class="transactions-td"></td>
+    <td class="transactions-td">
+      paypal
+    </td>
+    <td class="transactions-td">
+      Deposit
+    </td>
+    <td class="transactions-td">
+      <span title="Credit" class="credit-arrow"></span>
+    </td>
+    <td class="transactions-td">$600.00</td>
+    <td class="transactions-td">Pending</td>
+    <td class="transactions-td">
+      Not Approved Yet
+    </td>
+  </tr>
+  <tr class="transactions-tr">
+    <td class="transactions-td">
+      5050
+    </td>
+    <td class="transactions-td">
+      Feb 5, 2019 3:24:17 PM
+    </td>
+    <td class="transactions-td"></td>
+    <td class="transactions-td">
+      paypal
+    </td>
+    <td class="transactions-td">
+      Deposit
+    </td>
+    <td class="transactions-td">
+      <span title="Credit" class="credit-arrow"></span>
+    </td>
+    <td class="transactions-td">$600.00</td>
+    <td class="transactions-td">Pending</td>
+    <td class="transactions-td">
+      Not Approved Yet
+    </td>
+  </tr>
+  </tbody></table>

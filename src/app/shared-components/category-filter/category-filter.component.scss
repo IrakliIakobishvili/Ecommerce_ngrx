@@ -1,0 +1,222 @@
+:host{
+  width: 210px;
+  height: 100%;
+}
+.sub-nav {
+  width: 210px;
+  height: 100%;
+  padding: 15px;
+  background: #7f64b4;
+}
+
+
+.sub-nav--catalog {
+  background: #00b9ca;
+}
+
+.sub-nav--catalog .sub-nav ul li a {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.sub-nav--catalog .sub-nav ul li a:hover:not(.sub-nav-active--catalog) {
+  background: #00828f;
+}
+
+.sub-nav--catalog .sub-nav ul {
+  border-top: 1px solid #0797a7;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #0797a7;
+}
+
+
+.sub-categories {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  border-top: 1px solid #0797a7;
+  margin: 23px 0 0 0;
+  padding: 18px 0 18px 0;
+  padding-bottom: 0px;
+}
+
+.sub-categories-heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 14px;
+}
+
+.sub-categories-heading .icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.sub-categories-heading .icon:hover {
+  background-color: #fff;
+}
+
+.sub-categories-heading .icon:hover:after {
+  border-color: #00b9ca;
+}
+
+.sub-categories-heading .icon--mark:after {
+  content: "";
+  clear: both;
+  position: absolute;
+  height: 5px;
+  width: 9px;
+  top: 9px;
+  right: 3px;
+  margin: -4px 0 0 -4px;
+  border: 4px solid #fff;
+  border-width: 0px 0px 3px 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sub-categories-heading .icon--minus:after {
+  content: "";
+  clear: both;
+  position: absolute;
+  height: 6px;
+  width: 8px;
+  top: 11px;
+  right: 5px;
+  margin: -7px -1px 0 -8px;
+  border: 4px solid #fff;
+  border-width: 0 0 3px 0px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+
+
+.sub-cat-list input {
+  display: none;
+  position: absolute;
+  right: 0px;
+}
+.sub-cat-list li label {
+  padding-left: 15px;
+}
+.sub-cat-list li label::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  cursor: default;
+  background: #fff;
+  border: 1px solid #04a4b5;
+  display: block;
+  position: absolute;
+  left: 0px;
+}
+.sub-cat-list li i {
+  position: absolute;
+  z-index: 2;
+  font-size: 9px;
+  left: 3px;
+  top: 3px;
+  display: none;
+}
+.sub-cat-list input:checked + label::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f00c";
+  position: absolute;
+  left: 5px;
+  color: #000;
+  font-size: 9px;
+  left: 3px;
+  top: 4px;
+}
+.sub-cat-list li{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sub-cat-checkbox label {
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  cursor: default;
+  background: #fff;
+  border: 1px solid #04a4b5;
+  display: block;
+}
+
+.sub-cat-checkbox input {
+  position: absolute;
+  right: 0px;
+  opacity: 0.4;
+}
+
+.sub-cat-label {
+  color: #fff;
+  font-weight: 600;
+  max-width: 160px;
+  overflow: hidden;
+  text-transform: capitalize;
+  margin-left: 6px;
+  cursor: default;
+}
+
+.sub-categories--purple {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.sub-categories--purple label {
+  border: 1px solid #7f64b4;
+}
+
+.sub-categories--purple .icon:hover {
+  background-color: #fff;
+}
+
+.sub-categories--purple .icon:hover:after {
+  border-color: #7f64b4;
+}
+
+.filter-button {
+  margin-top: 50px;
+}
+
+.filter-button a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11px;
+  background: #323b4d;
+  font-weight: 700;
+  padding: 10px 5px;
+  padding-bottom: 12px;
+  border-radius: 3px;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif !important;
+}
+.filter-button a em {
+  font-style: normal !important;
+}

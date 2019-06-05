@@ -1,0 +1,13 @@
+<li class="nav-item" [routerLinkActive]="'active-item'" [routerLinkActiveOptions]="{exact: false}" [ngClass]="menuItem.activeBgColor">
+  <a [title]="menuItem.title" [routerLink]="menuItem.url" [className]="menuItem.icon">
+    <ng-container *ngIf="menuItem.badge">
+      <span class="sub-quantity quantity-show">{{menuItem.badge}}</span>
+    </ng-container>
+    <ng-container *ngIf="menuItem.image">
+      <div class="image-holder">
+        <img [src]="menuItem.image.url" [width]="menuItem.image.width" [height]="menuItem.image.height" [alt]="menuItem.image.description">
+      </div>
+    </ng-container>
+    <span [className]="'active-bg ' + menuItem.activeBg"></span>
+  </a>
+</li>

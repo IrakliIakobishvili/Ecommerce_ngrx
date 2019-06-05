@@ -1,0 +1,164 @@
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  vertical-align: top;
+  width: 239px;
+  background: #fff;
+  margin: 0 14px 29px 14px;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 0 rgba(111, 111, 127, 0.1);
+  box-shadow: 0 1px 0 rgba(111, 111, 127, 0.1);
+  border: 1px solid #e3e3e9;
+  position: relative;
+}
+
+li:last-child {
+  -webkit-align-self: strech;
+  -ms-flex-item-align: strech;
+  -ms-grid-row-align: strech;
+  align-self: strech;
+}
+
+li:hover .check {
+  opacity: 1;
+}
+
+li:hover .view {
+  opacity: 1;
+}
+
+li.selected .view.icon-eye:before {
+  color: #7a7c8a;
+}
+
+li.selected .check {
+  background: #75af42;
+}
+
+.image-holder {
+  height: 205px;
+  padding: 14px 16px;
+  text-align: center;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.image-holder:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  min-height: 100%;
+}
+
+.image-holder > * {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 99%;
+}
+
+.image-holder img {
+  vertical-align: middle;
+}
+
+.name-product {
+  padding: 0 16px 9px;
+}
+
+.name-product h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #47506e;
+  font-size: 14px;
+  margin: 0;
+}
+
+.name-product .price {
+  display: block;
+  color: #47506e;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.option {
+  padding: 14px 16px 11px 18px;
+  background: #f9f9fb;
+  border-top: 1px solid #ecedf1;
+}
+
+.option em {
+  font-style: normal;
+  font-size: 14px;
+  color: #47506e;
+  position: relative;
+  letter-spacing: -.5px;
+}
+
+.option em:first-child {
+  padding: 0 14px 0 0;
+  margin: 0 14px 0 0;
+}
+
+.option em:first-child:after {
+  content: "";
+  clear: both;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background: #cccdd6;
+}
+
+.check {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #aaafb3;
+  text-indent: -9999px;
+  opacity: 0;
+}
+
+.check:after {
+  content: "";
+  clear: both;
+  position: absolute;
+  height: 5px;
+  width: 8px;
+  top: 10px;
+  right: 5px;
+  margin: -4px 0 0 -4px;
+  border: 3px solid #fff;
+  border-width: 0 0 2px 2px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+}
+
+.view {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.view.icon-eye:before {
+  clear: both;
+  display: block;
+  text-indent: 0;
+  color: #aaafb3;
+  font-size: 20px;
+}

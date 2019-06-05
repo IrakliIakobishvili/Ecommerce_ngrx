@@ -1,0 +1,14 @@
+.plan-and-billing--wrapper {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.plan-and-billing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan-and-payment {
+  border-right: 1px solid #e3e3e3;
+}

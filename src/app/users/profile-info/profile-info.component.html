@@ -1,0 +1,67 @@
+<div class="sub sub-profile sub-active">
+  <div class="sub-main profile-main">
+    <form class="profile-form" [formGroup]="profileInfoForm" (ngSubmit)="saveChanges()">
+      <div class="avatar">
+        <h3 class="avatar-heading">
+          YOUR AVATAR
+        </h3>
+        <div class="avatar-wrapper">
+          <div class="avatar-cont">
+            <ng-container *ngIf="profilePicture else defaultProfilePic">
+              <img [src]="profilePicture" alt="profile picture">
+            </ng-container>
+            <ng-template #defaultProfilePic>
+              <img src="../../../assets/images/default-profile-pic.png">
+            </ng-template>
+          </div>
+          <input class="avatar-input" type="file" name="user-image" id="upload-img" (change)="onProfilePicChange($event)">
+          <label for="upload-img" class="avatar-label">update</label>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="details-sub details-left">
+          <h3 class="details-heading">personal details</h3>
+          <div class="details-input-cont">
+            <label for="first_name">FIRST NAME</label>
+            <input name="first_name" required="" type="text" id="first_name" placeholder="First Name" formControlName="firstName">
+          </div>
+          <div class="details-input-cont">
+            <label for="last_name">LAST NAME</label>
+            <input name="last_name" required="" type="text" id="last_name" placeholder="Last Name" formControlName="lastName">
+          </div>
+          <div class="details-input-cont">
+            <label>COUNTRY</label>
+            <!-- <ng-select formControlName="country">              
+            </ng-select> -->
+            <ng-select formControlName="country" 
+              [searchable]="false"
+              [items]="countries"
+              bindLabel="name"
+              placeholder="Select city"
+              >
+            </ng-select>
+          </div>
+        </div>
+        <div class="details-sub details__sub--right">
+          <h3 class="details-heading">contact information</h3>
+          <div class="details-input-cont">
+            <label for="email">EMAIL</label>
+            <input name="email" required="" type="email" id="email" placeholder="Email" formControlName="email">
+          </div>
+          <div class="details-input-cont">
+            <label for="skype">SKYPE</label>
+            <input name="skype" required="" type="text" id="skype" placeholder="Skype" formControlName="skype">
+          </div>
+          <div class="details-input-cont">
+            <label for="phone">PHONE</label>
+            <input name="phone" required="" type="text" id="phone" placeholder="Phone" formControlName="phone">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="profile-submit" id="change-profile">
+        save changes
+      </button>
+    </form>
+  </div>
+</div>
